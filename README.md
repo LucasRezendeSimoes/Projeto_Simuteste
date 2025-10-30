@@ -16,4 +16,23 @@ RA: 24.122.093-8
 # Instruções
 
 ## Avisos
-O programa precisa ser rodado em linux ou no codespace por causa da biblioteca mutmut.
+### O programa precisa ser rodado em linux ou no codespace por causa da biblioteca mutmut.
+
+## Instalação
+
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/LucasRezendeSimoes/Projeto_Simuteste.git
+   ```
+
+2. **Crie um ambiente virtual (recomendado):**
+   ```bash
+   python -m venv venv
+   
+   source venv/bin/activate
+   ```
+
+3. **Instale as dependências:**
+   ```bash
+   pip install -r requirements.txt
+   ```
