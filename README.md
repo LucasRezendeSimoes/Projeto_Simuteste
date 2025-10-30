@@ -14,3 +14,6 @@ RA: 24.122.092-0
 RA: 24.122.093-8
 
 # Instruções
+
+## Avisos
+O programa precisa ser rodado em linux ou no codespace por causa da biblioteca mutmut.
