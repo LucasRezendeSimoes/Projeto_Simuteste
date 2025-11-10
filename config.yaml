@@ -1,0 +1,12 @@
+app:
+  title: "Sistema de Agendamento"
+  timezone: "America/Sao_Paulo"
+  working_hours:
+    start: "08:00"
+    end: "18:00"
+database:
+  url: "sqlite:///./agendamento.db"
+logging:
+  level: "INFO"
+export:
+  csv_dir: "./exports"
