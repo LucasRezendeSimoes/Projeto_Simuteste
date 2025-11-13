@@ -1,16 +1,16 @@
 import os
-from app.config import CONFIG
+from .config import CONFIG
 from typing import List
 from datetime import datetime
 import csv
-from app.models import Appointment
+from . import models
 
 def ensure_export_dir():
     d = CONFIG["export"]["csv_dir"]
     os.makedirs(d, exist_ok=True)
     return d
 
-def export_appointments_to_csv(appointments: List[Appointment]) -> str:
+def export_appointments_to_csv(appointments: List[models.Appointment]) -> str:
     """Exporta lista de appointments para CSV e retorna path."""
     d = ensure_export_dir()
     filename = f"appointments_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"

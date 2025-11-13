@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 from typing import List, Optional
 from datetime import datetime
-from app import models
+from . import models
 from sqlalchemy.orm import Session
 
 # Interface (abstração) — Repository Pattern

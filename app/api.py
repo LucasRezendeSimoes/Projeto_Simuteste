@@ -1,14 +1,14 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
-from app.db import get_db
-from app import schemas, models
-from app.repositories import SqlAlchemyUserRepository, SqlAlchemyAppointmentRepository
-from app.services import AppointmentService, UserService
-from app.exceptions import AppException, NotFoundException, BusinessRuleException
-from app.config import CONFIG
+from .db import get_db
+from . import schemas, models
+from .repositories import SqlAlchemyUserRepository, SqlAlchemyAppointmentRepository
+from .services import AppointmentService, UserService
+from .exceptions import AppException, NotFoundException, BusinessRuleException
+from .config import CONFIG
 from typing import List, Optional
 from datetime import datetime, date, timedelta
-from app.utils import export_appointments_to_csv
+from .utils import export_appointments_to_csv
 import logging
 
 router = APIRouter()

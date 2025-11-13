@@ -1,10 +1,10 @@
 from datetime import timedelta, datetime, time
 from typing import List, Optional
 from sqlalchemy.orm import Session
-from app.repositories import SqlAlchemyAppointmentRepository, SqlAlchemyUserRepository
-from app import models
-from app.exceptions import NotFoundException, BusinessRuleException
-from app.config import CONFIG
+from .repositories import SqlAlchemyAppointmentRepository, SqlAlchemyUserRepository
+from . import models
+from .exceptions import NotFoundException, BusinessRuleException
+from .config import CONFIG
 
 class AppointmentService:
     """
