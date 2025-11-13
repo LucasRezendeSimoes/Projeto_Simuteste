@@ -1,6 +1,6 @@
-# 📋 RESUMO EXECUTIVO - SOLUÇÃO DE MUTATION TESTING
+# RESUMO EXECUTIVO - SOLUÇÃO DE MUTATION TESTING
 
-## 🎯 Problema Inicial
+## Problema Inicial
 
 Ao tentar executar mutation testing com mutmut, o erro ocorria:
 
@@ -13,10 +13,10 @@ RuntimeError: context has already been set
 
 ---
 
-## ✅ Solução Implementada
+## Solução Implementada
 
 ### 1. **Script Wrapper Seguro** (`mutmut_safe.py`)
-- Aplica patch de segurança **ANTES** de importar mutmut
+- Aplica patch de segurança antes de importar mutmut
 - Ignora erros de contexto já configurado
 - Executa mutmut de forma segura
 
@@ -41,27 +41,27 @@ skip_cache=true           # Cache sempre fresco
 
 ---
 
-## 🚀 Como Usar (Agora é Fácil!)
+## Como Usar
 
-### Opção 1️⃣: Recomendada (Mais Simples)
+### Opção 1: Recomendada (Mais Simples)
 ```bash
 python run_mutmut.py
 ```
-✅ Faz tudo automaticamente!
+Faz tudo automaticamente.
 
-### Opção 2️⃣: Manual (Mais Controle)
+### Opção 2: Manual (Mais Controle)
 ```bash
 python mutmut_safe.py run
 ```
 
-### Opção 3️⃣: Nativa (Pode Falhar em Container)
+### Opção 3: Nativa (Pode Falhar em Container)
 ```bash
 python -m mutmut run
 ```
 
 ---
 
-## 📊 Visualizar Resultados
+## Visualizar Resultados
 
 Após execução bem-sucedida:
 
@@ -80,20 +80,20 @@ open html/index.html      # macOS
 
 ---
 
-## 🔧 Arquivos Modificados/Criados
+## Arquivos Modificados/Criados
 
 | Arquivo | Tipo | Descrição |
 |---------|------|-----------|
-| `mutmut_safe.py` | ✨ Novo | Aplica patches de segurança |
-| `run_mutmut.py` | 🔄 Atualizado | Wrapper com limpeza automática |
-| `conftest.py` | ✨ Novo | Pré-configura multiprocessing |
-| `setup.cfg` | 🔄 Atualizado | Opções multiprocessing desabilitadas |
-| `docs/guia_mutmut_completo.md` | ✨ Novo | Guia completo (4000+ palavras) |
-| `ENTREGA.md` | 🔄 Atualizado | Instruções corrigidas |
+| `mutmut_safe.py` | Novo | Aplica patches de segurança |
+| `run_mutmut.py` | Atualizado | Wrapper com limpeza automática |
+| `conftest.py` | Novo | Pré-configura multiprocessing |
+| `setup.cfg` | Atualizado | Opções multiprocessing desabilitadas |
+| `docs/guia_mutmut_completo.md` | Novo | Guia completo (4000+ palavras) |
+| `ENTREGA.md` | Atualizado | Instruções corrigidas |
 
 ---
 
-## 🎓 O Que Aprendemos
+## O Que Aprendemos
 
 ### Problema: Multiprocessing em Containers
 - Python containerizado pré-inicializa multiprocessing
@@ -102,7 +102,7 @@ open html/index.html      # macOS
 
 ### Solução: Monkey Patching
 ```python
-# ANTES de importar mutmut:
+# Antes de importar mutmut:
 import multiprocessing as mp
 
 # Salvar original
@@ -117,53 +117,53 @@ def safe_set_start_method(method, force=False):
             return None  # Ignorar erro
         raise
 
-# Aplicar patch GLOBALMENTE
+# Aplicar patch globalmente
 mp.set_start_method = safe_set_start_method
 
-# AGORA importar mutmut (seguro!)
+# Agora importar mutmut (seguro)
 from mutmut.__main__ import cli
 ```
 
 ---
 
-## 📈 Status Atual
+## Status Atual
 
 | Métrica | Status | Detalhes |
 |---------|--------|----------|
-| **Testes** | ✅ 25/25 passando | 100% de sucesso |
-| **Cobertura** | ✅ 53% | 192 de 364 linhas |
-| **Mutation Testing** | ✅ Configurado | Pronto para usar |
-| **Documentação** | ✅ Completa | 2 guias + exemplo |
-| **Projeto** | ✅ Entregável | Pronto! |
+| **Testes** | 25/25 passando | 100% de sucesso |
+| **Cobertura** | 53% | 192 de 364 linhas |
+| **Mutation Testing** | Configurado | Pronto para usar |
+| **Documentação** | Completa | 2 guias + exemplo |
+| **Projeto** | Entregável | Pronto |
 
 ---
 
-## ⚠️ Notas Importantes
+## Notas Importantes
 
 1. **Em Containers**: Pode haver limitações além do que foi fixado
-2. **Em Máquina Local**: Funciona perfeitamente sem patches
+2. **Em Máquina Local**: Funciona sem patches na maioria dos casos
 3. **Se ainda falhar**: Leia `docs/guia_mutmut_completo.md` para troubleshooting avançado
 
 ---
 
-## 🎯 Próximos Passos
+## Próximos Passos
 
-1. ✅ Execução local: `python run_mutmut.py`
-2. ✅ Ver resultados: `python -m mutmut results`
-3. ✅ Analisar sobreviventes em `html/index.html`
-4. ✅ Adicionar testes para melhorar kill rate
+1. Execução local: `python run_mutmut.py`
+2. Ver resultados: `python -m mutmut results`
+3. Analisar sobreviventes em `html/index.html`
+4. Adicionar testes para melhorar kill rate
 
 ---
 
-## 📞 Suporte
+## Suporte
 
 **Erro?** Leia a seção de troubleshooting em:
 - `docs/guia_mutmut_completo.md` (Recomendado)
 - `docs/guia_mutmut.md` (Quick reference)
 
-**Sucesso?** Parabéns! 🎉 Seu projeto tem mutation testing funcionando!
+**Sucesso?** Parabéns — o mutation testing está configurado e funcionando.
 
 ---
 
 **Criado**: 14 de Novembro de 2025
-**Status**: ✅ Pronto para Entrega
+**Status**: Pronto para Entrega
