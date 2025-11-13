@@ -4,7 +4,7 @@
     - Um projeto em python para marcação de consultas
         - Componentes
             - Capacidade de criação de consultas
-            - Lógica para não marcação de consultas em cima da outra
+            - Banco de dados SQLite
             - Sistema de log
             - CRUD de usuários via API
         - Regras
