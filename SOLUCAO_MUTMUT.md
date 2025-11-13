@@ -69,13 +69,13 @@ Após execução bem-sucedida:
 # Listar mutantes
 python -m mutmut results
 
-# Gerar relatório HTML
-python -m mutmut html
+# Navegar interativamente pelos resultados (UI em terminal)
+python -m mutmut browse
 
-# Abrir em navegador
-xdg-open html/index.html  # Linux
-# ou
-open html/index.html      # macOS
+# Observação: a versão do `mutmut` instalada não fornece um comando
+# que gere relatório HTML automaticamente. Para uma visualização
+# interativa use o comando `browse` acima ou inspecione o diretório
+# `mutants/` gerado após a execução.
 ```
 
 ---
