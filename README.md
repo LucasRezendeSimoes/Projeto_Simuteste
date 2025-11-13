@@ -13,6 +13,9 @@ RA: 24.122.092-0
 ### Rômulo C O Canavesso
 RA: 24.122.093-8
 
+# Link apresentação
+https://docs.google.com/presentation/d/1z55-RpNnAKNasSFN3dKNXiuiw_4IMcGPk7ZsvMPPoGg/edit?slide=id.g3a2ec22b331_0_59#slide=id.g3a2ec22b331_0_59
+
 # Instruções
 
 ## Avisos
