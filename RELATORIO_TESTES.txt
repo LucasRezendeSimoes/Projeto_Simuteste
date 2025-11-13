@@ -30,8 +30,8 @@ ARQUITETURA TESTADA:
 🧪 TESTES UNITÁRIOS (1 min)
 ================================================================================
 
-Total: 25 testes
-Status: ✅ 25/25 PASSANDO (100%)
+Total: 24 testes
+Status: ✅ 24/24 PASSANDO (100%)
 Arquivo: tests/test_complete.py
 
 CATEGORIA 1: AppointmentService (8 testes)
