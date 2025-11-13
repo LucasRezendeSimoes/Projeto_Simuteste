@@ -13,6 +13,9 @@ RA: 24.122.092-0
 ### Rômulo C O Canavesso
 RA: 24.122.093-8
 
+# Link apresentação
+https://docs.google.com/presentation/d/1z55-RpNnAKNasSFN3dKNXiuiw_4IMcGPk7ZsvMPPoGg/edit?slide=id.g3a2ec22b331_0_59#slide=id.g3a2ec22b331_0_59
+
 # Instruções
 
 ## Avisos
@@ -36,3 +39,17 @@ RA: 24.122.093-8
    ```bash
    pip install -r requirements.txt
    ```
+
+
+## Como realizar os testes
+### 1. Executar testes
+pytest tests/test_complete.py -v
+
+### 2. Ver cobertura
+pytest --cov=app --cov-report=html
+
+### 3. Abrir relatório
+open htmlcov/index.html
+
+### 4. Mutation testing
+python -m mutmut run
