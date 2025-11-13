@@ -1,1 +1,45 @@
 # Relatório de Execução
+    - Testes de usuário (Unitários/Integração/Funcionais)
+        - Create
+            - Teste de Sucesso
+                - Mock utilizado
+                - Resultado
+            - Teste de Falha
+                - Mock utilizado
+                - Resultado
+        - Read
+            - Teste de Sucesso
+                - Mock utilizado
+                - Resultado
+            - Teste de Falha
+                - Mock utilizado
+                - Resultado
+        - Update
+            - Teste de Sucesso
+                - Mock utilizado
+                - Resultado
+            - Teste de Falha
+                - Mock utilizado
+                - Resultado
+        - Delete
+            - Teste de Sucesso
+                - Mock utilizado
+                - Resultado
+            - Teste de Falha
+                - Mock utilizado
+                - Resultado
+    - Criação de Consulta (Unitários/Integração/Funcionais)
+        - Create
+            - Teste de Sucesso
+                - Mock utilizado
+                - Resultado
+            - Teste malformed JSON
+                - Mock utilizado
+                - Resultado
+            - Teste Método Errado
+                - Mock utilizado (e o método)
+                - Resultado
+    - Cobertura de código: X%
+    - Quantidade de casos de mutantes em aberto: X%
+
+            

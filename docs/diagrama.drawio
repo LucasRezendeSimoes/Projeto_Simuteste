@@ -1,0 +1,37 @@
+<mxfile host="65bd71144e">
+    <diagram id="MoQP8aHwejs2dzJGW1hu" name="Page-1">
+        <mxGraphModel dx="663" dy="574" grid="1" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="7" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+                    <mxGeometry x="130" y="350" width="550" height="310" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Sistema de Criação de Consultas" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="7">
+                    <mxGeometry x="110" y="110" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Sistema de CRUD de usuário" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="7">
+                    <mxGeometry x="300" y="150" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="endArrow=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="7" source="3" target="4">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="250" y="270" as="sourcePoint"/>
+                        <mxPoint x="300" y="220" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="2" value="Sistema de log" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="7">
+                    <mxGeometry x="300" y="70" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="" style="endArrow=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="7" source="3" target="2">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="150" y="150" as="sourcePoint"/>
+                        <mxPoint x="200" y="100" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="10" value="API" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="140" y="308" width="40" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
